@@ -22,4 +22,20 @@ Este repositório acadêmico contém a execução completa do **Dossiê de Audit
 - **Gzip:** Compactação nativa de dados de alta volumetria.
 
 ---
+## 3. Instruções para Instalação e Execução
 
+### Passo 1: Clonar o Repositório
+```bash
+git clone [https://github.com/SEU-USUARIO/projeto-auditoria-vibra-2025.git](https://github.com/SEU-USUARIO/projeto-auditoria-vibra-2025.git)
+cd projeto-auditoria-vibra-2025
+Passo 2: Instalar as Dependências
+Bash
+pip install -r requirements.txt
+Passo 3: Executar a Sequência de Scripts Python
+Para executar o pipeline completo de auditoria e recalcular todas as tabelas e evidências:
+
+Bash
+python codigos/01_importacao_dados.py
+python codigos/02_tratamento_dados.py
+python codigos/03_analise_auditoria.py
+python codigos/04_testes_auditoria.py
