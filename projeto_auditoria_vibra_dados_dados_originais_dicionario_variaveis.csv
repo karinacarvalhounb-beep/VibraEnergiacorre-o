@@ -1,0 +1,12 @@
+Campo,Tipo de Dado,Descrição,Regra de Validação Contábil / Faixa de Valores
+id_registro,String,Identificador único da transação contábil/lançamento,Formato REG-XXXXXX (Único)
+data_lancamento,Date,Data do lançamento no razão sintético (2025),AAAA-MM-DD (Exercício de 2025)
+cgu_unidade,String,Unidade Geradora de Caixa associada,"Comerc Energia, Rede Postos, Aviação, Lubrificantes, Conveniência"
+conta_contabil,String,Código da conta contábil analítica,"1.2.01.01 (Ágio), 1.2.01.02 (Softwares), 1.2.01.03 (Marcas/Patentes), 1.2.01.04 (Direitos de Exploração)"
+descricao_ativo,String,Descrição sintética do item patrimonial registrado,Texto descritivo do ativo intangível
+valor_historico,Float,Valor de aquisição ou custo histórico registrado (R$),Valor maior que zero
+amortizacao_acumulada,Float,Amortização acumulada até a data do lançamento (R$),"Valor maior ou igual a zero, menor ou igual ao valor histórico"
+valor_liquido,Float,Valor contábil líquido (Valor Histórico - Amortização Acumulada),Valor maior ou igual a zero
+taxa_amortizacao_anual,Float,Taxa percentual anual de amortização aplicada,0.0 a 0.20 (dependendo da vida útil e intangível)
+vida_util_meses,Integer,Vida útil estimada em meses,0 para vida útil indefinida (ex: Ágio); 12 a 240 para definidos
+indicador_impairment,Boolean,Indicador de necessidade de provisão para perda,0 (Sem perda indicativa) ou 1 (Com perda indicativa)
